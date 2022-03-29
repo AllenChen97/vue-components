@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {name:'Allen',age:18}
+
+        // 增 改
+        localStorage.setItem('a','msg')
+        localStorage.setItem('b',666)
+        localStorage.setItem('c',JSON.stringify(obj))
+
+        // 查
+        localStorage.getItem('a')
+        localStorage.getItem('b')
+        const json = localStorage.getItem('c')
+        console.log(JSON.parse(json));
+
+        // 删
+        localStorage.removeItem('a')
+        localStorage.clear()
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {name:'Allen',age:18}
+
+        // 增 改
+        sessionStorage.setItem('a','msg')
+        sessionStorage.setItem('b',666)
+        sessionStorage.setItem('c',JSON.stringify(obj))
+
+        // 查
+        sessionStorage.getItem('a')
+        sessionStorage.getItem('b')
+        const json = sessionStorage.getItem('c')
+        console.log(JSON.parse(json));
+
+        // 删
+        sessionStorage.removeItem('a')
+        sessionStorage.clear()
+    </script>
+</body>
+</html>
